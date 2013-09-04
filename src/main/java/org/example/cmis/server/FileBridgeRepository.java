@@ -191,7 +191,8 @@ public class FileBridgeRepository {
         repositoryInfo.setName(repositoryId);
         repositoryInfo.setDescription(repositoryId);
 
-        repositoryInfo.setCmisVersionSupported(cmisVersion.value());
+        // exercise 1.1 fill in the correct (variable) value for the CMISVersionSupported
+        repositoryInfo.setCmisVersionSupported( <exercise 1.1> );
 
         repositoryInfo.setProductName("FileBridge Server");
         repositoryInfo.setProductVersion("1.0");
