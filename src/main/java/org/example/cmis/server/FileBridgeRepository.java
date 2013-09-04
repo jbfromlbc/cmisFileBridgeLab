@@ -194,11 +194,13 @@ public class FileBridgeRepository {
         // exercise 1.1 fill in the correct (variable) value for the CMISVersionSupported
         repositoryInfo.setCmisVersionSupported( <exercise 1.1> );
 
-        repositoryInfo.setProductName("FileBridge Server");
-        repositoryInfo.setProductVersion("1.0");
-        repositoryInfo.setVendorName("My Company");
-
-        repositoryInfo.setRootFolder(ROOT_ID);
+        // exercise 1.2 fill in the product version and vendor name
+        repositoryInfo.setProductName( <exercise 1.2> );
+        repositoryInfo.setProductVersion( <exercise 1.2> );
+        repositoryInfo.setVendorName( <exercise 1.2> );
+        
+        // exercise 1.3 see the correct root folder id for your repository
+        repositoryInfo.setRootFolder(  <exercise 1.3>  );
 
         repositoryInfo.setThinClientUri("");
         repositoryInfo.setChangesIncomplete(true);
