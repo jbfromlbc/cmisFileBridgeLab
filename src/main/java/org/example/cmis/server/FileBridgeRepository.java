@@ -1751,11 +1751,11 @@ public class FileBridgeRepository {
      */
     private String fileToId(File file) throws IOException {
         if (file == null) {
-            throw new IllegalArgumentException("File is not valid!");
+        	<exercise 3.1>
         }
 
         if (root.equals(file)) {
-            return ROOT_ID;
+        	return <exercise 3.2>
         }
 
         String path = getRepositoryPath(file);
