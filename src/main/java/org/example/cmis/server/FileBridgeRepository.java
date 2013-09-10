@@ -876,7 +876,8 @@ public class FileBridgeRepository {
         try {
             stream = new BufferedInputStream(new FileInputStream(file), 4 * 1024);
             if (offset != null || length != null) {
-                stream = new ContentRangeInputStream(stream, offset, length);
+				// fill in the correct values for the Constructor below
+                stream = new ContentRangeInputStream(  <exercise 7.1>  );
             }
         } catch (FileNotFoundException e) {
             throw new CmisObjectNotFoundException(e.getMessage(), e);
