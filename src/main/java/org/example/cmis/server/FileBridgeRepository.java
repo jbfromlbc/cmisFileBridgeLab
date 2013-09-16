@@ -877,7 +877,7 @@ public class FileBridgeRepository {
             stream = new BufferedInputStream(new FileInputStream(file), 4 * 1024);
             if (offset != null || length != null) {
 				// fill in the correct values for the Constructor below
-                stream = new ContentRangeInputStream(  <exercise 7.1>  );
+                stream = new ContentRangeInputStream(  < exercise 4.1 >  );
             }
         } catch (FileNotFoundException e) {
             throw new CmisObjectNotFoundException(e.getMessage(), e);
@@ -1183,12 +1183,12 @@ public class FileBridgeRepository {
     private Properties compileProperties(CallContext context, File file, Set<String> orgfilter,
             ObjectInfoImpl objectInfo) {
         if (file == null) {
-            throw new IllegalArgumentException("File must not be null!");
+            <exercise 3.1>
         }
 
         // we can't gather properties if the file or folder doesn't exist
         if (!file.exists()) {
-            throw new CmisObjectNotFoundException("Object not found!");
+            <exercise 3.1>
         }
 
         // copy filter
@@ -1197,7 +1197,9 @@ public class FileBridgeRepository {
         // find base type
         String typeId = null;
 
+		// Identify if the file is a doc or a folder/directory
         if (file.isDirectory()) {
+			
             typeId = BaseTypeId.CMIS_FOLDER.value();
             objectInfo.setBaseType(BaseTypeId.CMIS_FOLDER);
             objectInfo.setTypeId(typeId);
@@ -1752,11 +1754,11 @@ public class FileBridgeRepository {
      */
     private String fileToId(File file) throws IOException {
         if (file == null) {
-        	<exercise 3.1>
+        	<exercise 2.1>
         }
 
         if (root.equals(file)) {
-        	return <exercise 3.2>
+        	return <exercise 2.2>
         }
 
         String path = getRepositoryPath(file);
