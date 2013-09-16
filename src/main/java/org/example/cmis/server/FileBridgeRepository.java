@@ -1240,11 +1240,11 @@ public class FileBridgeRepository {
 
         // let's do it
         try {
-            PropertiesImpl result = new PropertiesImpl();
+            PropertiesImpl result = <exercise 3.2.1>
 
             // id
-            String id = fileToId(file);
-            addPropertyId(result, typeId, filter, PropertyIds.OBJECT_ID, id);
+            String id = <exercise 3.2.2>
+            addPropertyId(  <exercise 3.2.3> );
             objectInfo.setId(id);
 
             // name
@@ -1324,6 +1324,7 @@ public class FileBridgeRepository {
                     addPropertyInteger(result, typeId, filter, PropertyIds.CONTENT_STREAM_LENGTH, file.length());
                     addPropertyString(result, typeId, filter, PropertyIds.CONTENT_STREAM_MIME_TYPE,
                             MimeTypes.getMIMEType(file));
+                            
                     addPropertyString(result, typeId, filter, PropertyIds.CONTENT_STREAM_FILE_NAME, file.getName());
 
                     objectInfo.setHasContent(true);
